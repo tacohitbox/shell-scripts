@@ -30,6 +30,8 @@ if ! [ -x "$(command -v jq)" ]; then
   sudo wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -O /usr/bin/jq
   sudo chmod +x /usr/bin/jq
 fi
+
+# GooseMod
 echo "Injecting GooseMod"
 cat $HOME/.config/discord/settings.json | jq --arg endpoint https://updates.goosemod.com/goosemod '. + {UPDATE_ENDPOINT: $endpoint, NEW_UPDATE_ENDPOINT: $endpoint}' | tee $HOME/.config/discord/settings.json
 echo "Finished injecting GooseMod."
