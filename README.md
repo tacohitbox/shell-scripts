@@ -6,4 +6,4 @@ Some shell scripts I wrote.
 
 Installs the latest Discord update for Linux and injects OpenAsar automatically.
 
-[File](./discord-update.sh)
+[**View**](./discord-update.sh) ([Raw](https://raw.githubusercontent.com/tacohitbox/shell-scripts/main/discord-update.sh))
